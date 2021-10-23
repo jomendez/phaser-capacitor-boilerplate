@@ -15,6 +15,7 @@
     "start": "webpack serve --open --config webpack.development.js",
     "build": "webpack --config webpack.distribution.js",
     "ionic:build": "npm run build",
+    "ionic:serve": "npm run start",
     "capacitor:build": "ionic capacitor build android",
     "capacitor:run": "ionic capacitor run android",
     "capacitor:open": "ionic capacitor open android"
