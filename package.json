@@ -1,0 +1,46 @@
+{
+  "name": "phaser-capacitor-boilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "3.2.5",
+    "@capacitor/app": "1.0.5",
+    "@capacitor/core": "3.2.5",
+    "@capacitor/haptics": "1.1.2",
+    "@capacitor/keyboard": "1.1.2",
+    "@capacitor/status-bar": "1.0.5",
+    "phaser": "^3.55.2"
+  },
+  "scripts": {
+    "start": "webpack serve --open --config webpack.development.js",
+    "build": "webpack --config webpack.distribution.js",
+    "ionic:build": "npm run build",
+    "capacitor:build": "ionic capacitor build android",
+    "capacitor:run": "ionic capacitor run android",
+    "capacitor:open": "ionic capacitor open android"
+  },
+  "eslintConfig": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "An Ionic project",
+  "devDependencies": {
+    "@capacitor/cli": "3.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
